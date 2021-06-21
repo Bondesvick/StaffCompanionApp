@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated AOP file</title>
+    <style>
+
+        * {
+            /* border: 1px solid grey; */
+        }
+
+        body {
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+        
+        #page-container {
+            width: 800px;
+            box-sizing: border-box;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        #top-horizontal-bar {
+            top: 0px;
+        }
+
+        #stanbic-logo-box {
+            height: 50px;
+            margin-left: 45px;
+            text-align: right;
+            /* padding-right: 35px; */
+            box-sizing: border-box;
+        }
+
+        #stanbic-logo-box img {
+            margin-left: auto;
+            position: relative;
+            width: 40px;
+            height: 46px;
+        }
+
+        #page-title-box {
+            margin-bottom: -20px;
+        }
+
+        #page-title {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        #page-subtitle {
+            font-size: 0.9em;
+            margin-top: 7px;
+        }
+
+        .AOP-section {
+            margin-top: 35px;
+            border-top: 1px solid #0032A1;
+            box-sizing: border-box;
+        }
+
+        .AOP-section-title {
+            display: flex;
+            margin-top: 10px;
+            height: 40px;
+        }
+
+        .AOP-section-title .title-logo {
+            box-sizing: border-box;
+            width: 40 px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .AOP-section-title .title-logo svg {
+            margin: 0 auto;
+            display: block;
+        }
+
+        .AOP-section-title .title-text {
+            line-height: 40px;
+            margin-left: 10px;
+        }
+
+        .AOP-section-content {
+            margin-top: 10px;
+            padding-left: 45px;
+        }
+
+        .AOP-section-content .content-row {
+            display: flex;
+            margin-top: 15px;
+            /* border: 1px solid salmon; */
+        }
+
+        .user-data {
+            width: 155px !important;
+            height: 100%;
+            box-sizing: border-box;
+            margin-right: 30px;
+        }
+
+        .user-data:last-child {
+            margin-right: auto;
+        }
+
+        .user-data-value {
+            height: 20px;
+            box-sizing: border-box;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .user-data-key {
+            height: 20px;
+            margin-top: 5px;
+            box-sizing: border-box;
+            font-size: 0.9em;
+        }
+
+        #t-and-c-timestamp {
+            width: 210px !important;
+        }
+
+        #id-docs-images {
+            margin-top: 20px;
+        }
+
+        .user-image-box {
+            width: 153px;
+            margin-right: 30px;
+        }
+
+        .user-image {
+            height: 130px;
+            width: 130px;
+            box-sizing: border-box;
+        }
+
+        .user-image img {
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+        }
+
+        .user-image-title {
+            box-sizing: border-box;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 0.9em;
+        }
+
+        .user-image-source {
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        .pep-question {
+            width:fit-content !important;
+            line-height: 1.2em;
+            padding-right: 40px;
+            margin-bottom: 15px;
+        }
+
+        #page-footer {
+            position: relative;
+            width: 100%;
+            height: 160px;
+            bottom: 0px;
+            background: rgba(3, 155, 254, 0.08);
+            margin-top: 790px;
+        }
+
+        #footer-content-box {
+            width: 800px;
+            box-sizing: border-box;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 45px;
+            padding-top: 15px;
+            padding-left: 45px;
+            font-size: 0.9em;
+        }
+
+        #footer-content-box .contact-info {
+            color: #005CC8;
+        }
+
+        #footer-gradient-row{
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+
+        #footer-gradient {
+            position: relative;
+            box-sizing:border-box;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(270deg, #005CC8 0%, #039BFE 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        #footer-it-can-be {
+            width: 300px;
+            margin-left: 20px;
+        }
+
+        #footer-it-can-be span {
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main id="page-container">
+        <div id="top-horizontal-bar">
+            <svg width="595" height="8" viewBox="0 0 595 8" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect width="595" height="8" fill="url(#pattern0)"/>
+                <defs>
+                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0" transform="translate(0 -0.161111) scale(0.000555556 0.0413194)"/>
+                    </pattern>
+                    <image id="image0" width="1800" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABwgAAAAgCAYAAAAGyyxTAAAACXBIWXMAACxLAAAsSwGlPZapAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJ/SURBVHgB7d1BahtBEIbRksHayAaNjCYaW6CVtU9rbyeQVS6YdU6aMPgKnp7u8nvQp/jo+jdR/v4LAAAAAADoyc9fEeO3IK8/v++iTJsAPt9dAAAAAABAT+634uAXIA7CcgRCAAAAAAD6Ig6mV07iICxJIAQAAAAAoC/jGORWpgAWJBACAAAAANCXox+E2d2cF4VFCYQAAAAAAPRjt4sYhiCvx639QViaQAgAAAAAQD/2hyA3cRCWJxACAAAAANCP8znIrZwCWJhACAAAAABAP+wPplee/SCEpQmEAAAAAAD0Yd4fnB9pTQ+buB4EQliaQAgAAAAAQB9Gvwezuz4FUIFACAAAAABAH17sD2b3dvF7EGoQCAEAAAAA6MP+EOR2mwRCqEEgBAAAAACgffvB/mBy8/7g9BBABQIhAAAAAADtsz+YXpkCqEQgBAAAAACgffYH03u3PwjVCIQAAAAAALRvGILcrk8CIdQiEAIAAAAA0Lb5vOj9NsjrerA/CDUJhAAAAAAAtO04Brl9tz8IVQmEAAAAAAC0bf5BSGo/7A9CVQIhAAAAAADtmk+LCoTpvdofhKoEQgAAAAAA2jUMQW7ltIlHE5NQlUAIAAAAAEC7Xs5BbsX+IFQnEAIAAAAA0K6j86LZ3SbnRaE2gRAAAAAAgDbN+4NOjKY2nxYtAiFUJxACAAAAANCm0e/B7F4P4iCsQSAEAAAAAKBNZ/uD2b1fAliBQAgAAAAAQJvsD6ZXnv0ghDUIhAAAAAAAtGe3+3ikNe8PXp0YhVUIhAAAAAAAtMf+YHplEgdhLQIhAAAAAADtEQjTe7sIhLAWgRAAAAAAgPbYH0zv5gchrOY/JJ0TOWMRQVoAAAAASUVORK5CYII="/>
+                </defs>
+            </svg>
+        </div>
+
+        <div id="stanbic-logo-box">
+            <img src="./standard_bank_logo 4.png">
+        </div>
+
+        <div id="page-title-box">
+            <div id="page-title">
+                Account Opening form
+            </div>
+
+            <div id="page-subtitle">
+                Confidential information
+            </div>
+        </div>
+
+        <div class="AOP-section" id="personal-info">
+            <div class="AOP-section-title">
+                <div class="title-logo">
+                    <svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="#EBF7FF"/>
+                        <path d="M11.8125 5.6875C8.60156 5.6875 6 8.28906 6 11.5C6 14.7109 8.60156 17.3125 11.8125 17.3125C15.0234 17.3125 17.625 14.7109 17.625 11.5C17.625 8.28906 15.0234 5.6875 11.8125 5.6875ZM11.8125 7.9375C12.9375 7.9375 13.875 8.875 13.875 10C13.875 11.1484 12.9375 12.0625 11.8125 12.0625C10.6641 12.0625 9.75 11.1484 9.75 10C9.75 8.875 10.6641 7.9375 11.8125 7.9375ZM11.8125 16C10.4297 16 9.1875 15.3906 8.36719 14.4062C8.8125 13.5859 9.67969 13 10.6875 13C10.7344 13 10.7812 13.0234 10.8516 13.0469C11.1562 13.1406 11.4609 13.1875 11.8125 13.1875C12.1406 13.1875 12.4688 13.1406 12.75 13.0469C12.8203 13.0234 12.8672 13 12.9375 13C13.9219 13 14.7891 13.5859 15.2344 14.4062C14.4141 15.3906 13.1719 16 11.8125 16Z" fill="#005CC8"/>
+                    </svg>
+                </div>
+                <div class="title-text">PERSONAL INFORMATION</div>
+            </div>
+
+            <div class="AOP-section-content">
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value" th:text="${AOPData.customerFirstName}"></div>
+                        <div class="user-data-key">First name</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value" th:text="${AOPData.customerMiddleName}"></div>
+                        <div class="user-data-key">Middle name</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value" th:text="${AOPData.customerLastName}"></div>
+                        <div class="user-data-key">Last name</div>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">BVN</div>
+                    </div>
+                    <div class="user-data" id="t-and-c-timestamp">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Terms and condition time stamp</div>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Date of birth</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Gender</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Marital status</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Mother's maiden name</div>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Preferred branch state</div>
+                    </div><div class="user-data">
+                    <div class="user-data-value"></div>
+                    <div class="user-data-key">Branch location</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Purpose of account</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="AOP-section" id="identity-documents">
+            <div class="AOP-section-title">
+                <div class="title-logo">
+                    <svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="#EBF7FF"/>
+                        <path d="M13.875 5.5H7.125C6.49219 5.5 6 6.01562 6 6.625V16.375C6 17.0078 6.49219 17.5 7.125 17.5H13.875C14.4844 17.5 15 17.0078 15 16.375V6.625C15 6.01562 14.4844 5.5 13.875 5.5ZM10.5 8.5C11.3203 8.5 12 9.17969 12 10C12 10.8438 11.3203 11.5 10.5 11.5C9.65625 11.5 9 10.8438 9 10C9 9.17969 9.65625 8.5 10.5 8.5ZM13.125 14.0547C13.125 14.3125 12.8906 14.5 12.5859 14.5H8.39062C8.10938 14.5 7.875 14.3125 7.875 14.0547V13.6094C7.875 12.8594 8.57812 12.25 9.44531 12.25H9.5625C9.84375 12.3906 10.1484 12.4375 10.5 12.4375C10.8281 12.4375 11.1328 12.3906 11.4141 12.25H11.5312C12.3984 12.25 13.125 12.8594 13.125 13.6094V14.0547Z" fill="#005CC8"/>
+                    </svg>
+                </div>
+                <div class="title-text">IDENTITY DOCUMENTS</div>
+            </div>
+
+            <div class="AOP-section-content">
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Identification type</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Identification number</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Issue date</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value">NIL</div>
+                        <div class="user-data-key">Expiry date</div>
+                    </div>
+                </div>
+
+                <div class="content-row" id="id-docs-images">
+                    <div class="user-image-box">
+                        <div class="user-image">
+                            <img src="./image_placeholder.png" alt="Passport photo">
+                        </div>
+                        <div class="user-image-title">Passport photo</div>
+                        <div class="user-image-source">Captured</div>
+                    </div>
+                    <div class="user-image-box">
+                        <div class="user-image">
+                            <img src="./image_placeholder.png" alt="Customer Signature">
+                        </div>
+                        <div class="user-image-title">Signature</div>
+                        <div class="user-image-source">Captured</div>
+                    </div>
+                    <div class="user-image-box">
+                        <div class="user-image">
+                            <img src="./image_placeholder.png" alt="ID Photo">
+                        </div>
+                        <div class="user-image-title">ID photo</div>
+                        <div class="user-image-source">Identity document</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="AOP-section" id="employment-info">
+            <div class="AOP-section-title">
+                <div class="title-logo">
+                    <svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="#EBF7FF"/>
+                        <path d="M16.2188 16.75H15.75V6.0625C15.75 5.75781 15.4922 5.5 15.1875 5.5H7.3125C6.98438 5.5 6.75 5.75781 6.75 6.0625V16.75H6.28125C6.11719 16.75 6 16.8906 6 17.0312V17.5H16.5V17.0312C16.5 16.8906 16.3594 16.75 16.2188 16.75ZM9 7.28125C9 7.14062 9.11719 7 9.28125 7H10.2188C10.3594 7 10.5 7.14062 10.5 7.28125V8.21875C10.5 8.38281 10.3594 8.5 10.2188 8.5H9.28125C9.11719 8.5 9 8.38281 9 8.21875V7.28125ZM9 9.53125C9 9.39062 9.11719 9.25 9.28125 9.25H10.2188C10.3594 9.25 10.5 9.39062 10.5 9.53125V10.4688C10.5 10.6328 10.3594 10.75 10.2188 10.75H9.28125C9.11719 10.75 9 10.6328 9 10.4688V9.53125ZM10.2188 13H9.28125C9.11719 13 9 12.8828 9 12.7188V11.7812C9 11.6406 9.11719 11.5 9.28125 11.5H10.2188C10.3594 11.5 10.5 11.6406 10.5 11.7812V12.7188C10.5 12.8828 10.3594 13 10.2188 13ZM12 16.75H10.5V14.7812C10.5 14.6406 10.6172 14.5 10.7812 14.5H11.7188C11.8594 14.5 12 14.6406 12 14.7812V16.75ZM13.5 12.7188C13.5 12.8828 13.3594 13 13.2188 13H12.2812C12.1172 13 12 12.8828 12 12.7188V11.7812C12 11.6406 12.1172 11.5 12.2812 11.5H13.2188C13.3594 11.5 13.5 11.6406 13.5 11.7812V12.7188ZM13.5 10.4688C13.5 10.6328 13.3594 10.75 13.2188 10.75H12.2812C12.1172 10.75 12 10.6328 12 10.4688V9.53125C12 9.39062 12.1172 9.25 12.2812 9.25H13.2188C13.3594 9.25 13.5 9.39062 13.5 9.53125V10.4688ZM13.5 8.21875C13.5 8.38281 13.3594 8.5 13.2188 8.5H12.2812C12.1172 8.5 12 8.38281 12 8.21875V7.28125C12 7.14062 12.1172 7 12.2812 7H13.2188C13.3594 7 13.5 7.14062 13.5 7.28125V8.21875Z" fill="#005CC8"/>
+                    </svg>
+                </div>
+                <div class="title-text">EMPLOYMENT INFORMATION</div>
+            </div>
+
+            <div class="AOP-section-content">
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Employment status</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Name of employer</div>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Employers address</div>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Nature of business</div>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Name of institution</div>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Sector</div>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Subsector</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="AOP-section" id="contact-info">
+            <div class="AOP-section-title">
+                <div class="title-logo">
+                    <svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="#EBF7FF"/>
+                        <path d="M10.0312 17.2656C10.2422 17.5938 10.7344 17.5938 10.9453 17.2656C14.3672 12.3438 15 11.8281 15 10C15 7.51562 12.9844 5.5 10.5 5.5C7.99219 5.5 6 7.51562 6 10C6 11.8281 6.60938 12.3438 10.0312 17.2656ZM10.5 11.875C9.44531 11.875 8.625 11.0547 8.625 10C8.625 8.96875 9.44531 8.125 10.5 8.125C11.5312 8.125 12.375 8.96875 12.375 10C12.375 11.0547 11.5312 11.875 10.5 11.875Z" fill="#005CC8"/>
+                    </svg>
+
+                </div>
+                <div class="title-text">CONTACT INFORMATION</div>
+            </div>
+
+            <div class="AOP-section-content">
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">State of origin</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Local Government Area</div>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Home address</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">LGA of origin</div>
+                    </div>
+                </div>
+
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">State of residence</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Phone number</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Email address</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="AOP-section" id="nok-info">
+            <div class="AOP-section-title">
+                <div class="title-logo">
+                    <svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="#EBF7FF"/>
+                        <path d="M17.2031 13.3516L13.875 11.5L17.2031 9.67188C17.4844 9.53125 17.5781 9.17969 17.4141 8.89844L16.9453 8.125C16.8047 7.84375 16.4531 7.75 16.1719 7.91406L12.9375 9.88281L13.0078 6.08594C13.0078 5.78125 12.75 5.5 12.4453 5.5H11.5312C11.2266 5.5 10.9688 5.78125 10.9688 6.08594L11.0625 9.88281L7.80469 7.91406C7.52344 7.75 7.17188 7.84375 7.03125 8.125L6.5625 8.89844C6.39844 9.17969 6.49219 9.53125 6.77344 9.67188L10.125 11.5L6.77344 13.3516C6.49219 13.4922 6.39844 13.8438 6.5625 14.125L7.03125 14.8984C7.17188 15.1797 7.52344 15.2734 7.80469 15.1094L11.0625 13.1406L10.9688 16.9375C10.9688 17.2422 11.2266 17.5 11.5312 17.5H12.4453C12.75 17.5 13.0078 17.2422 13.0078 16.9375L12.9375 13.1406L16.1719 15.1094C16.4531 15.2734 16.8047 15.1797 16.9453 14.8984L17.4141 14.125C17.5781 13.8438 17.4844 13.4922 17.2031 13.3516Z" fill="#005CC8"/>
+                    </svg>
+
+                </div>
+                <div class="title-text">NEXT OF KIN INFORMATION</div>
+            </div>
+
+            <div class="AOP-section-content">
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">First name</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Last name</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Other names</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Date of birth</div>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Phone number</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Relationship</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Email address</div>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Home address number</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Home address</div>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">Landmark</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">City of residence</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value"></div>
+                        <div class="user-data-key">State of residence</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="AOP-section" id="other-info">
+            <div class="AOP-section-title">
+                <div class="title-logo">
+                    <svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="#EBF7FF"/>
+                        <path d="M15.75 10.375H12.375V7C12.375 6.60156 12.0234 6.25 11.625 6.25H10.875C10.4531 6.25 10.125 6.60156 10.125 7V10.375H6.75C6.32812 10.375 6 10.7266 6 11.125V11.875C6 12.2969 6.32812 12.625 6.75 12.625H10.125V16C10.125 16.4219 10.4531 16.75 10.875 16.75H11.625C12.0234 16.75 12.375 16.4219 12.375 16V12.625H15.75C16.1484 12.625 16.5 12.2969 16.5 11.875V11.125C16.5 10.7266 16.1484 10.375 15.75 10.375Z" fill="#005CC8"/>
+                    </svg>
+
+                </div>
+                <div class="title-text">OTHER INFORMATION</div>
+            </div>
+
+            <div class="AOP-section-content">
+                <div class="content-row">
+                    <div class="user-data pep-question">
+                        <div class="user-data-value">NO</div>
+                        <div class="user-data-key">
+                            Have you or any family member or close associate, previously held or currently hold a prominient position (ie member of government, the judiciary, the military and royalty)?
+                        </div>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class="user-data pep-question">
+                        <div class="user-data-value">NO</div>
+                        <div class="user-data-key">
+                            Have you or any family member or close associate, previously held or currently hold a prominient position in an international organisation (ie member of the board, director or deputy director)?    
+                        </div>
+                    </div>
+                </div>
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value">NIL</div>
+                        <div class="user-data-key">Name of person</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value">NIL</div>
+                        <div class="user-data-key">Position</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value">NIL</div>
+                        <div class="user-data-key">Relationship</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="AOP-section" id="service-access">
+            <div class="AOP-section-title">
+                <div class="title-logo">
+                    <svg width="30" height="30" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="11" cy="11" r="11" fill="#EBF7FF"/>
+                        <path d="M15.9375 10.5391L7.6875 5.66406C7.00781 5.26562 6 5.66406 6 6.625V16.375C6 17.2656 6.9375 17.8047 7.6875 17.3594L15.9375 12.4844C16.6641 12.0391 16.6641 10.9844 15.9375 10.5391Z" fill="#005CC8"/>
+                    </svg>
+
+                </div>
+                <div class="title-text">SERVICE ACCESS</div>
+            </div>
+
+            <div class="AOP-section-content">
+                <div class="content-row">
+                    <div class="user-data">
+                        <div class="user-data-value">YES</div>
+                        <div class="user-data-key">Internet banking access</div>
+                    </div>
+                    <div class="user-data">
+                        <div class="user-data-value">YES</div>
+                        <div class="user-data-key">Debit card request</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer id="page-footer">
+        <div id="footer-content-box">
+            <p style="font-weight: bold;">Property of Stanbic IBTC, this document is NOT TRANSFERABLE</p>
+            <p  style="margin-top: -5px;"> For further inquiries, contact <span class="contact-info">0700 909 909 909</span> or email <span class="contact-info">CustomerCareNigeria@stanbicibtc.com</span></p>
+        </div>
+        <div id="footer-gradient-row">
+            <div id="footer-gradient"></div>
+            <div id="footer-it-can-be">Stanbic IBTC <span>IT CAN BE</span></div>
+        </div>
+        
+    </footer>
+</body>
+</html>

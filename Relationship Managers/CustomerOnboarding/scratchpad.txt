@@ -1,0 +1,12 @@
+requestManagerRequest.setBody(
+                "<otherRequestDetails>" +
+                        " <customerType></customerType>" +
+                        " <firstName>OLUMUYIWA</firstName>" +
+                        " <middleName></middleName>" +
+                        " <lastName>ABDULRAHMAN</lastName>" +
+                        " <dOB>1958-06-22T00:00:00.000</dOB>" +
+                        " <phoneNumber>+234(0)8020408486</phoneNumber>" +
+                        " <corporateName></corporateName>" +
+                        " <rCNumber></rCNumber>" +
+                        "</otherRequestDetails>"
+                        );
